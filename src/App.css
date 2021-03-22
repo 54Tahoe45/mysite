@@ -3,14 +3,20 @@
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255, 255, 255, 0)
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 body {
-  font-family: "Roboto Condensed" sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /***** NAVBAR STYLING ******/
+
+nav {
+  z-index: 2;
+}
 .logo {
   width: 16.25rem;
 }
@@ -37,10 +43,104 @@ nav ul li {
   height: 6rem !important;
 }
 
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem !important
+  }
+}
+
 .navbar-nav>li>a.active, .navbar-nav>li>a.active:focus  {
   border-top: .1875rem solid var(--primary-orange);
 }
 
 .navbar-nav>li>a:hover {
   border-top: .1875rem solid var(--primary-orange);
+}
+
+/******************** Header ************************/
+
+.header-wrapper {
+  position: relative;
+  background: url(tallacSunset.png);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+  text-shadow: 0 0 1875rem #000; /* horizontal-offset vertical-offset 'blur' colour */
+  -moz-text-shadow: 0 0 1875rem #000;
+  -webkit-text-shadow: 0 0 1875rem #000;
+  font-size: 3rem;
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 2rem !important
+  }
+}
+
+/*************** Typed Effect ************/
+.typed-text {
+  font-size: 2.5rem;
+  color: var(--primary-white);
+  text-shadow: 0 0 1875rem #000; /* horizontal-offset vertical-offset 'blur' colour */
+  -moz-text-shadow: 0 0 1875rem #000;
+  -webkit-text-shadow: 0 0 1875rem #000;
+}
+
+@media(max-width: 768px) {
+  .typed-text {
+    font-size: 1.3rem !important
+  }
+}
+
+
+/*************** Header Main Offer BUTTON ************/
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: .625rem .75rem .75rem .75rem;
+  color: var(--primary-white);
+  margin-top: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
+
+/****************** PARTICLES *******************/
+.tsparticles-canvas-el {
+  position: absolute;
+  width: 100vh;
+  height: 10vh;
+  z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }
