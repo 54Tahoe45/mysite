@@ -10,7 +10,7 @@ const Services = () => {
             <h1 className="py-5">my services</h1>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3 col-sm-6">
+                    <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faLaptopCode} size="2x"/></div>
                             <h3>Web Development</h3>
@@ -20,7 +20,7 @@ const Services = () => {
                         </div>
                     </div>
                     {/* - */}
-                    <div className="col-md-3 col-sm-6">
+                    <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faCamera} size="2x"/></div>
                             <h3>Photography</h3>
@@ -30,7 +30,7 @@ const Services = () => {
                         </div>
                     </div>
                     {/* - */}
-                    <div className="col-md-3 col-sm-6">
+                    <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faTh} size="2x"/></div>
                             <h3>Blockchain Technology</h3>
@@ -40,7 +40,7 @@ const Services = () => {
                         </div>
                     </div>
                     {/* - */}
-                    <div className="col-md-3 col-sm-6">
+                    <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faVideo} size="2x"/></div>
                             <h3>Videography</h3>
