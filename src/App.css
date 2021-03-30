@@ -10,6 +10,7 @@
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
   --primary-grey: #ccd1d9;
+  --primary-black: #000000;
 }
 
 body {
@@ -209,7 +210,8 @@ nav ul li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
 }
 
 .services .box {
@@ -325,5 +327,109 @@ nav ul li {
     float: none;
     direction: ltr;
     width: 100%;
+  }
+}
+
+/******************** PORTFOLIO ********************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin:  1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/******************** OVERFLOW ********************/
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 11rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top:  5rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+/******************** POPUP ********************/
+
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 .5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  color: var(--primary-red);
+}
+
+/******************** MEDIA ********************/
+@media(max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%
+  }
+}
+
+@media(max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100% !important;
+  }
+
+  .portfolio-image-popupbox {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media(max-height: 280px) {
+  .popupbox-wrapper {
+    height: 90% !important;
+  }
+
+  .portfolio-image-popupbox {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
