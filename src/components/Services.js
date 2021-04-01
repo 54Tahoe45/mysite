@@ -25,7 +25,7 @@ const Services = () => {
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faCamera} size="2x"/></div>
                             <h3>Photography</h3>
                             <p>
-                                Capturing high quality uniqe images and creating unique memories.
+                                Capturing high quality images and creating unique memories.
                             </p>
                         </div>
                     </div>
