@@ -6,7 +6,7 @@
   
   "private": true,
 
-  "homepage": "https://54Tahoe45.github.io.newsite",
+  "homepage": "https://54Tahoe45.github.io.portfolio_project",
   
   "dependencies": {
   
@@ -98,9 +98,9 @@
     
   "eject": "react-scripts eject",
 
-  "predeploy": "npm run src",
+  "predeploy": "npm run build",
 
-  "deploy": "gh-pages -d src"
+  "deploy": "gh-pages -d build"
   
   },
   
